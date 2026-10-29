@@ -2,7 +2,8 @@
 
 Прототип бесконечного платформера, сделанный в Unity. 
 
-<img width="885" height="496" alt="Demonstration game" src="https://github.com/user-attachments/assets/4235547f-a398-4c05-83b7-7b26afd1714c" />
+<img width="885" height="496" alt="1284" src="https://github.com/user-attachments/assets/71fb1589-3fd3-4221-97a1-d3b36c635bba" />
+
 
 Использованные инструменты:
 - **Новая система управление(Input System)** простое интегрирование новых систем ввода 
