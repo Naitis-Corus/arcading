@@ -3,11 +3,11 @@
     "name": "New Actions",
     "maps": [
         {
-            "name": "dvijenia",
+            "name": "MoveAction",
             "id": "2338b144-5629-4194-a082-0b1e4bb3f361",
             "actions": [
                 {
-                    "name": "knopkishi",
+                    "name": "KeybordButtons",
                     "type": "Value",
                     "id": "a31b6e2d-2238-47ba-a168-3a9d0dfdc5b5",
                     "expectedControlType": "Vector2",
@@ -25,7 +25,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "knopkishi",
+                    "action": "KeybordButtons",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
@@ -36,7 +36,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "knopkishi",
+                    "action": "KeybordButtons",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -47,7 +47,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "knopkishi",
+                    "action": "KeybordButtons",
                     "isComposite": false,
                     "isPartOfComposite": true
                 }

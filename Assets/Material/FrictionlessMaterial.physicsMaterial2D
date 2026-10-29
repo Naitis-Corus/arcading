@@ -6,7 +6,7 @@ PhysicsMaterial2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: dlia_ne_prlipania_k_Steneam_pri_zajatoi_lnopke
+  m_Name: FrictionlessMaterial
   serializedVersion: 2
   friction: 0
   bounciness: 0

@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 13015881}
   - component: {fileID: 13015880}
   m_Layer: 0
-  m_Name: generaite_plotformishi
+  m_Name: PlatformGenerait
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -148,9 +148,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3bfc32d6c8fd044b825d01006db5755, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::bescnoscni_plotformig
-  platformi: {fileID: 6108047261534553985, guid: d4d16a3319a0cd841b8d177cf8408c21, type: 3}
-  platformi_pervaia: {fileID: 1295695572}
-  dinctabci_ot_drugih_plapform: 10
+  platformPrefab: {fileID: 6108047261534553985, guid: d4d16a3319a0cd841b8d177cf8408c21, type: 3}
+  firstPlatform: {fileID: 1295695572}
+  distanceY: 10
 --- !u!4 &13015881
 Transform:
   m_ObjectHideFlags: 0
@@ -178,7 +178,7 @@ GameObject:
   - component: {fileID: 57993657}
   - component: {fileID: 57993656}
   m_Layer: 5
-  m_Name: metry
+  m_Name: "\u0421ounterUI"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -315,7 +315,7 @@ GameObject:
   - component: {fileID: 108702860}
   - component: {fileID: 108702859}
   m_Layer: 5
-  m_Name: lina_Visoty
+  m_Name: SliderUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -496,7 +496,7 @@ GameObject:
   - component: {fileID: 329707132}
   - component: {fileID: 329707131}
   m_Layer: 5
-  m_Name: strlochka
+  m_Name: ArrowUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -572,7 +572,7 @@ GameObject:
   - component: {fileID: 342742650}
   - component: {fileID: 342742649}
   m_Layer: 5
-  m_Name: text_you_Ded
+  m_Name: TextInscriptionUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -709,7 +709,7 @@ GameObject:
   - component: {fileID: 359165790}
   - component: {fileID: 359165789}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: TextUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -846,7 +846,7 @@ GameObject:
   - component: {fileID: 364498145}
   - component: {fileID: 364498144}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: TextUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -985,7 +985,7 @@ GameObject:
   - component: {fileID: 387912791}
   - component: {fileID: 387912790}
   m_Layer: 0
-  m_Name: geroi
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1019,9 +1019,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4fa79929ff8ba342806c3fe4f494402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::geroi
-  move_speed: 30
-  jump_speed: 15
-  shag_uscirenia: 5
+  moveSpeed: 30
+  jumpSpeed: 15
+  stepSpeed: 5
 --- !u!114 &387912791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1034,7 +1034,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87bd24d48d70f754b82ec87260771461, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::dvijenia_gg
-  naprav: {x: 0, y: 0}
+  direction: {x: 0, y: 0}
 --- !u!61 &387912792
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1119,7 +1119,7 @@ GameObject:
   - component: {fileID: 457132019}
   - component: {fileID: 457132018}
   m_Layer: 0
-  m_Name: chetchik
+  m_Name: CounterUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1137,10 +1137,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abe185602da4ef645b9051b202405233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::dlia_polzunka
-  gghka: {fileID: 387912790}
-  strelochka: {fileID: 329707130}
-  dlina_lenii_sleva: {fileID: 108702858}
-  textish: {fileID: 57993656}
+  player: {fileID: 387912790}
+  arrowUI: {fileID: 329707130}
+  sliderUI: {fileID: 108702858}
+  textUI: {fileID: 57993656}
 --- !u!4 &457132019
 Transform:
   m_ObjectHideFlags: 0
@@ -1339,9 +1339,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f684088f14527d4c923d77820168754, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::camera_verh
-  ggshka: {fileID: 387912790}
-  scorosty_dvijenia_verh: 1.5
-  vrema_dovedenia_Camere_Do_GG: 2
+  player: {fileID: 387912790}
+  speedMoveUp: 1.5
+  cameraDelayTime: 2
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1463,7 +1463,7 @@ GameObject:
   - component: {fileID: 817275338}
   - component: {fileID: 817275337}
   m_Layer: 5
-  m_Name: RESTART
+  m_Name: RestartButtonUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1534,8 +1534,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1763612133}
-        m_TargetAssemblyTypeName: you_dedus, Assembly-CSharp
-        m_MethodName: restratish
+        m_TargetAssemblyTypeName: DeathScreenUI, Assembly-CSharp
+        m_MethodName: RestartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1595,7 +1595,7 @@ GameObject:
   - component: {fileID: 989632274}
   - component: {fileID: 989632273}
   m_Layer: 5
-  m_Name: you_Ded
+  m_Name: DeathScreenPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1672,7 +1672,7 @@ GameObject:
   - component: {fileID: 1077134284}
   - component: {fileID: 1077134283}
   m_Layer: 5
-  m_Name: menu
+  m_Name: MenuPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1786,7 +1786,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6108047261534553985, guid: d4d16a3319a0cd841b8d177cf8408c21, type: 3}
       propertyPath: m_Name
-      value: platforma
+      value: platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1804,7 +1804,7 @@ GameObject:
   - component: {fileID: 1186627910}
   - component: {fileID: 1186627911}
   m_Layer: 0
-  m_Name: visual_ggisha
+  m_Name: Visual_Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1899,7 +1899,7 @@ GameObject:
   - component: {fileID: 1287428300}
   - component: {fileID: 1287428303}
   m_Layer: 5
-  m_Name: starish
+  m_Name: StartButtonUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1970,8 +1970,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1287428303}
-        m_TargetAssemblyTypeName: knipka_start, Assembly-CSharp
-        m_MethodName: startink_Igri
+        m_TargetAssemblyTypeName: StartingUI, Assembly-CSharp
+        m_MethodName: StartingGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2031,7 +2031,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0b0a2bb66bd8d3449d919ce6e0ee659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::knipka_start
-  panelika_menu: {fileID: 1077134281}
+  menuPanelUI: {fileID: 1077134281}
 --- !u!1 &1295695572 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6108047261534553985, guid: d4d16a3319a0cd841b8d177cf8408c21, type: 3}
@@ -2127,7 +2127,7 @@ GameObject:
   - component: {fileID: 1763612134}
   - component: {fileID: 1763612133}
   m_Layer: 0
-  m_Name: sledit_za_you_Ded
+  m_Name: monitorsPlayerDeath
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2145,8 +2145,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c62b5603d3a932643b6b52a4ad8a624e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::you_dedus
-  paneilka_you_Ded: {fileID: 989632271}
-  gghka: {fileID: 387912790}
+  deathPanelUI: {fileID: 989632271}
+  player: {fileID: 387912790}
+  lowerDeathEdjes: 12
 --- !u!4 &1763612134
 Transform:
   m_ObjectHideFlags: 0
